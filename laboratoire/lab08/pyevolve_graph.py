@@ -14,7 +14,7 @@ def graph_pop_heatmap_raw(pop, minimize, colormap="jet", filesave=None):
    pylab.colorbar()
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -28,7 +28,7 @@ def graph_pop_heatmap_fitness(pop, minimize, colormap="jet", filesave=None):
    pylab.colorbar()
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -89,7 +89,7 @@ def graph_diff_raw(pop, minimize, filesave=None):
    pylab.legend(prop=FontProperties(size="smaller"))
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -159,7 +159,7 @@ def graph_maxmin_raw(pop, minimize, filesave=None):
    pylab.legend(prop=FontProperties(size="smaller"))
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -206,7 +206,7 @@ def graph_maxmin_fitness(pop, minimize, filesave=None):
    pylab.legend(prop=FontProperties(size="smaller"))
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -234,7 +234,7 @@ def graph_errorbars_raw(pop, minimize, filesave=None):
    pylab.grid(True)
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -263,7 +263,7 @@ def graph_errorbars_fitness(pop, minimize, filesave=None):
    pylab.grid(True)
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -303,7 +303,7 @@ def graph_compare_raw(pop, minimize, id_list, filesave=None):
    pylab.legend(prop=FontProperties(size="smaller"))
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
@@ -342,7 +342,7 @@ def graph_compare_fitness(pop, minimize, id_list, filesave=None):
    pylab.legend(prop=FontProperties(size="smaller"))
 
    if filesave:
-      pylab.savefig(filesave)
+      pylab.savefig(filesave, dpi=80)
       print("Graph saved to %s file !" % (filesave,))
    else:
       pylab.show()
